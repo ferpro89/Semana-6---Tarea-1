@@ -1,0 +1,111 @@
+<!-- Navbar Start - Versión Mejorada -->
+<div class="container-fluid sticky-top navbar-container">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-modern shadow-elegant">
+      <!-- Logo con animación -->
+      <a routerLink="/" class="navbar-brand brand-animated">
+        <span class="brand-text">
+          <span class="brand-icon">🎨</span>
+          REGISTRO USUARIOS
+        </span>
+      </a>
+
+      <!-- Botón hamburguesa mejorado -->
+      <button
+        type="button"
+        class="navbar-toggler modern-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+        aria-expanded="false"
+        aria-controls="navbarCollapse"
+      >
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+      </button>
+
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto nav-modern">
+          <!-- Home -->
+          <a routerLink="/" 
+             routerLinkActive="nav-active" 
+             class="nav-link nav-item-modern">
+            <i class="fas fa-home nav-icon"></i>
+            <span>Home</span>
+          </a>
+
+          <!-- Usuarios -->
+          <a [routerLink]="['/admin/admin']" 
+             routerLinkActive="nav-active"
+             class="nav-link nav-item-modern">
+            <i class="fas fa-users nav-icon"></i>
+            <span>Usuarios</span>
+          </a>
+
+          <!-- Roles -->
+          <a routerLink="/admin/roles" 
+             routerLinkActive="nav-active"
+             class="nav-link nav-item-modern">
+            <i class="fas fa-user-shield nav-icon"></i>
+            <span>Roles</span>
+          </a>
+
+          <!-- Accesos -->
+          <a routerLink="/admin/accesos" 
+             routerLinkActive="nav-active"
+             class="nav-link nav-item-modern">
+            <i class="fas fa-key nav-icon"></i>
+            <span>Accesos</span>
+          </a>
+
+          <!-- Dropdown mejorado -->
+          <div class="nav-item dropdown dropdown-modern">
+            <a href="#!" 
+               class="nav-link dropdown-toggle nav-item-modern"
+               data-bs-toggle="dropdown"
+               role="button"
+               aria-expanded="false">
+              <i class="fas fa-ellipsis-h nav-icon"></i>
+              <span>Más</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-modern shadow-lg">
+              <li>
+                <a href="feature.html" class="dropdown-item dropdown-item-modern">
+                  <i class="fas fa-star"></i>
+                  <span>Características</span>
+                </a>
+              </li>
+              <li>
+                <a href="team.html" class="dropdown-item dropdown-item-modern">
+                  <i class="fas fa-users"></i>
+                  <span>Nuestro Equipo</span>
+                </a>
+              </li>
+              <li>
+                <a href="testimonial.html" class="dropdown-item dropdown-item-modern">
+                  <i class="fas fa-quote-left"></i>
+                  <span>Testimonios</span>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+                <a href="404.html" class="dropdown-item dropdown-item-modern text-danger">
+                  <i class="fas fa-exclamation-triangle"></i>
+                  <span>Error 404</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contacto -->
+          <a href="contact.html" class="nav-link nav-item-modern">
+            <i class="fas fa-envelope nav-icon"></i>
+            <span>Contacto</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+<!-- Navbar End -->

@@ -1,0 +1,66 @@
+/* --- Navbar general --- */
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Navbar al hacer scroll */
+.sticky-top.scrolled {
+  background-color: #1e1e2f !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Marca / Logo --- */
+.navbar-brand span {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand span:hover {
+  color: #0dcaf0; /* celeste */
+}
+
+/* --- Links --- */
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #0dcaf0 !important;
+  transform: scale(1.05);
+}
+
+/* --- Dropdown --- */
+.dropdown-menu {
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem 0;
+}
+
+.dropdown-item {
+  font-weight: 500;
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  padding-left: 1.5rem;
+}
+
+/* --- Botón Hamburguesa (Móvil) --- */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* icono blanco si usas navbar-dark */
+}

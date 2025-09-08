@@ -1,0 +1,28 @@
+<div class="login-container">
+  <h2 class="login-title">Login</h2>
+
+  <form (ngSubmit)="onSubmitLogin()" class="login-form">
+    <input
+      [(ngModel)]="email"
+      name="email"
+      type="email"
+      placeholder="Correo electrónico"
+      required
+      class="form-input"
+    />
+    <input
+      [(ngModel)]="password"
+      name="password"
+      type="password"
+      placeholder="Contraseña"
+      required
+      class="form-input"
+    />
+    <button type="submit" class="btn btn-primary">Ingresar</button>
+  </form>
+
+  <div class="session-actions">
+    <button class="btn btn-secondary" (click)="onLogout()">Cerrar sesión</button>
+    <button class="btn btn-info" (click)="checkSession()">Verificar sesión</button>
+  </div>
+</div>
